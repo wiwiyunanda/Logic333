@@ -27,7 +27,8 @@ namespace Day01
             //Soal02 soal02 = new Soal02();
             //Soal03 soal03 = new Soal03();
             //Soal04 soal04 = new Soal04();
-            Soal05 soal05 = new Soal05();
+            //Soal05 soal05 = new Soal05();
+            Soal06 soal06 = new Soal06();
 
         }
 
