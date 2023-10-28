@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace Day01
 {
-    internal class soal05
+    internal class Soal05
     {
+        public Soal05()
+        {
+            int n = 7;
+            int currentNumber = 1;
+
+            for (int i = 1; i < n - 1; i++)
+            {
+                Console.Write(currentNumber + "\t");
+                if (i % 2 == 0)
+                {
+                    Console.Write("*\t");
+                }
+                currentNumber += 4;
+            }
+        }
     }
 }
