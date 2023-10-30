@@ -27,9 +27,9 @@ namespace Day02
                     case 1:
                         Soal01 soal01 = new Soal01();
                         break;
-                    //case 2:
-                    //    Soal02 soal02 = new Soal02();
-                    //    break;
+                    case 2:
+                        Soal02 soal02 = new Soal02();
+                        break;
                     //case 3:
                     //    Soal03 soal03 = new Soal03();
                     //    break;
