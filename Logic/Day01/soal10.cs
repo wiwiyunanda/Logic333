@@ -10,13 +10,14 @@ namespace Day01
     {
         public Soal10()
         {
-            int n = 8;
+            int n = 7;
             int currentNum = 3;
-            for (int i = 1; i < n - 1; i++)
+            for (int i = 2; i < n; i++)
             {
                 Console.Write(currentNum + "\t");
-                if (i % 3 == 0)
+                if (i % 4 == 0)
                 {
+                    n += 1;
                     Console.Write("XXX\t");
                     currentNum *= 3;
                 }
