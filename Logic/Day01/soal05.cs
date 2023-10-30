@@ -12,19 +12,34 @@ namespace Day01
         {
             Console.WriteLine("===Soal 05===");
             Console.Write("Nilai n: ");
-            int n = int.Parse(Console.ReadLine());
+            // study kasus
+            //1	 5	*	9	13	*	17
             //int n = 7;
-            int currentNumber = 1;
-
-            for (int i = 1; i < n - 1; i++)
-            {
-                Console.Write(currentNumber + "\t");
-                if (i % 2 == 0)
-                {
+            int n = int.Parse(Console.ReadLine());
+            int deret = 1;
+            for (int i = 0; i < n; i++)
+            { 
+                if ((i+1) % 3 == 0)
                     Console.Write("*\t");
+                else
+                {
+                    Console.Write($"{deret}\t");
+                    deret += 4;
                 }
-                currentNumber += 4;
             }
+            
+            //cara lain:
+            //int currentNumber = 1;
+
+            //for (int i = 1; i < n - 1; i++)
+            //{
+            //    Console.Write(currentNumber + "\t");
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.Write("*\t");
+            //    }
+            //    currentNumber += 4;
+            //}
         }
     }
 }
