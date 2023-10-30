@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using System.Threading.Channels;
+
 namespace Day01
 {
     public class Program
@@ -11,6 +13,7 @@ namespace Day01
             new Program();
             //new Program("Ika");
             //new Program(4);
+            Console.WriteLine();
             Console.WriteLine("Press any key!!");
             Console.ReadKey();
         }
@@ -18,11 +21,58 @@ namespace Day01
         // constructor
         public Program()
         {
-            Console.WriteLine("Program");
-            //Additional(5, 6);
-            //Subtraction(8, 6);
-            //Multiplication(3, 4);
-            //Distribution(30, 6);
+            Console.WriteLine("");
+            Console.WriteLine("===Day 01===");
+            string answer = "t"; //tidak
+
+            while (answer.ToLower() == "t")
+            {
+                Console.Write("==Masukkan nomor soal: ");
+                int soal = int.Parse(Console.ReadLine());
+                switch (soal)
+                {
+                    case 1:
+                        Soal00 soal00 = new Soal00();
+                        break;
+                    case 2:
+                        Soal02 soal02 = new Soal02();
+                        break;
+                    case 3:
+                        Soal03 soal03 = new Soal03();
+                        break;
+                    case 4:
+                        Soal04 soal04 = new Soal04();
+                        break;
+                    case 5:
+                        Soal05 soal05 = new Soal05();
+                        break;
+                    case 6:
+                        Soal06 soal06 = new Soal06();
+                        break;
+                    case 7:
+                        Soal07 soal07 = new Soal07();
+                        break;
+                    case 8:
+                        Soal08 soal08 = new Soal08();
+                        break;
+                    case 9:
+                        Soal09 soal09 = new Soal09();
+                        break;
+                    case 10:
+                        Soal10 soal10 = new Soal10();
+                        break;
+                    default:
+                        Console.WriteLine("Nomor soal tidak ditemukan.");
+                        break;
+                }
+                Console.WriteLine();
+                Console.Write("Selesai? [y/t]");
+                answer = Console.ReadLine();
+
+                //clear screen
+                Console.Clear();
+            }
+            
             //Soal00 soal00 = new Soal00();
             //Soal02 soal02 = new Soal02();
             //Soal03 soal03 = new Soal03();
@@ -32,10 +82,13 @@ namespace Day01
             //Soal07 soal07 = new Soal07();
             //Soal08 soal08 = new Soal08();
             //Soal09 soal09 = new Soal09();
-            Soal10 soal10 = new Soal10();
+            //Soal10 soal10 = new Soal10();
 
         }
-
+        //Additional(5, 6);
+        //Subtraction(8, 6);
+        //Multiplication(3, 4);
+        //Distribution(30, 6);
         public Program(string param1)
         {
             Console.WriteLine($"Program string dengan {param1}");

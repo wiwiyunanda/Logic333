@@ -10,7 +10,10 @@ namespace Day01
     {
         public Soal06()
         {
-            int n = 7;
+            Console.WriteLine("===Soal 06===");
+            Console.Write("Nilai n: ");
+            int n = int.Parse(Console.ReadLine());
+            //int n = 7;
             int currentNumber = 1;
 
             for (int i = 1; i < n - 1; i++)
