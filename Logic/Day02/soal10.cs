@@ -1,44 +1,32 @@
 ﻿
-using System.Diagnostics.Metrics;
-
 namespace Day02
 {
-    internal class Soal03
+    internal class Soal10
     {
-        public Soal03()
+        public Soal10()
         {
-            Console.WriteLine("====Soal 03====");
+            Console.WriteLine("====Soal 10====");
 
             Console.WriteLine("Nilai n1: ");
             int n1 = int.Parse(Console.ReadLine());
-
             Console.WriteLine("Nilai n2: ");
             int n2 = int.Parse(Console.ReadLine());
-
             //studi kasus
-            //n=7, n2=3
+            //n=7 n2=3
             //0   1   2   3   4   5   6
-            //3   6   12  24  12  6   3
+            //0   3   6   9   12  15  18
+            //0   4   8   12  16  20  24
 
+            int[,] matrix = new int[2, n1];
+            for (int i = 0; i < n1; i++)
+            {
 
-            //1= baris
-            //n1= kolom
-            int[,] matrix = new int[1, n1];
-            int mid = n1 / 2;
-            for (int i = 0; i < mid; i++)
-            {
-                matrix[0, i] = n2;
-                n2 = n2 * 2;
-            }
-            for (int i = mid; i < n1; i++)
-            {
-                matrix[0, i] = n2;
-                n2 = n2 / 2;
+                matrix[0, i] = i * 3;
+                matrix[1, i] = i* (n2+1);
+
             }
 
-               
-
-        Print2D(matrix);
+            Print2D(matrix);
         }
         public void Print2D(int[,] arr2d)
         {
@@ -55,4 +43,3 @@ namespace Day02
         }
     }
 }
-
