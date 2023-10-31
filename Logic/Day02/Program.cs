@@ -54,6 +54,9 @@ namespace Day02
                     case 10:
                         Soal10 soal10 = new Soal10();
                         break;
+                    case 30:
+                        Soal30 soal30 = new Soal30();
+                        break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
                         break;
