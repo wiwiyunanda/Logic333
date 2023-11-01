@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Day01\Day01.csproj" />
+    <ProjectReference Include="..\Day02\Day02.csproj" />
+    <ProjectReference Include="..\Day04\Day04\Day04.csproj" />
+  </ItemGroup>
+
 </Project>

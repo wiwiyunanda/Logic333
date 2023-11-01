@@ -1,5 +1,5 @@
 ﻿
-using Utility;
+
 
 namespace Day02
 {
@@ -28,7 +28,7 @@ namespace Day02
                 matrix[0, i] = (int)Math.Pow(n2, i);
             }
 
-            Printing.Print2D(matrix);
+            
             
         }
     }

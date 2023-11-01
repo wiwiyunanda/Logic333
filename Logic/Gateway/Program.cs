@@ -1,2 +1,47 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+namespace Gateway
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("====Welcome to Batch 333 ===");
+           
+            new Program();
+        }
+
+        public Program()
+        {
+            string answer = "t";
+            while (answer.ToLower() == "t")
+            {
+                Console.WriteLine(" 1 Day 01");
+                Console.WriteLine(" 2 Day 02");
+                Console.WriteLine(" 4 Day 04");
+                Console.Write("Pilih hari: ");
+
+                int hari = int.Parse(Console.ReadLine());
+
+                switch (hari)
+                {
+                    case 1:
+                        Day01.Program program01 = new Day01.Program(); 
+                        break;
+                    case 2:
+                        Day02.Program program02 = new Day02.Program();
+                        break;
+                    case 4:
+                        Day04.Program program04 = new Day04.Program();
+                        break;
+                    default:
+                        Console.WriteLine("Hari tidak ditemukan");
+                        break;
+                }
+
+                Console.Write("keluar [y/n]: ");
+                answer = Console.ReadLine();
+
+            }
+        }
+    }
+}

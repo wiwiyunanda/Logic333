@@ -9,6 +9,10 @@ namespace Day01
             Console.Write("Nilai n: ");
             int n = int.Parse(Console.ReadLine());
             //int n = 7;
+            //studi kasus
+            //n = 7
+            //1   5 * 13  17 * 25
+
             int currentNumber = 1;
 
             for (int i = 1; i < n - 1; i++)
