@@ -20,6 +20,9 @@ namespace Day04
             Console.WriteLine("4. Time Conversion");
             Console.WriteLine("5. Simple Array Sum");
             Console.WriteLine("6. Diagonal Difference");
+            Console.WriteLine("7. Plus Minus");
+            Console.WriteLine("8. Staircase");
+            Console.WriteLine("9. Min-Max Sum");
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
             {
@@ -45,6 +48,15 @@ namespace Day04
                     case 6:
                         DiagonalDifference diagonalDifference = new DiagonalDifference();
                         break; 
+                    case 7:
+                        PlusMinus plusMinus = new PlusMinus();
+                        break;
+                    case 8:
+                        Staircase staircase = new Staircase();
+                        break;
+                    case 9:
+                        MiniMaxSum miniMaxSum = new MiniMaxSum();
+                        break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
                         break;
