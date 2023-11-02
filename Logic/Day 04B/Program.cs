@@ -19,15 +19,8 @@ namespace Day04B
             Console.WriteLine("1. A Very Big Sum");
             Console.WriteLine("2. Compare the Triplets");
             Console.WriteLine("3. camel Case");
-            //Console.WriteLine("3. Substring");
-            //Console.WriteLine("4. Time Conversion");
-            //Console.WriteLine("5. Simple Array Sum");
-            //Console.WriteLine("6. Diagonal Difference");
-            //Console.WriteLine("7. Plus Minus");
-            //Console.WriteLine("8. Staircase");
-            //Console.WriteLine("9. Min-Max Sum");
-            //Console.WriteLine("10. Birthday Cake Candles");
-            //Console.WriteLine("11. A Very Big Sum");
+            Console.WriteLine("4. Strong Password");
+           
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
             {
@@ -43,6 +36,9 @@ namespace Day04B
                         break;
                     case 3:
                         camelCase camelCase = new camelCase();
+                        break;
+                    case 4:
+                        StrongPassword strongPassword = new StrongPassword();
                         break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
