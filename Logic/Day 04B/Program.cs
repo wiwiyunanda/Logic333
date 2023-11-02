@@ -17,7 +17,7 @@ namespace Day04B
         {
             Console.WriteLine("===Day 04 B===");
             Console.WriteLine("1. A Very Big Sum");
-            //Console.WriteLine("2. Split");
+            Console.WriteLine("2. Compare the Triplets");
             //Console.WriteLine("3. Substring");
             //Console.WriteLine("4. Time Conversion");
             //Console.WriteLine("5. Simple Array Sum");
@@ -30,12 +30,15 @@ namespace Day04B
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
             {
-                Console.Write("==Masukkan nomor soal: ");
+                Console.Write("====Masukkan nomor soal: ====");
                 int soal = int.Parse(Console.ReadLine());
                 switch (soal)
                 {
                     case 1:
                         AVeryBigSum aVeryBigSum = new AVeryBigSum();
+                        break;
+                    case 2:
+                        CompareTheTriplets compareTheTriplets = new CompareTheTriplets();
                         break;
                     //case 2:
                     //    Split split = new Split();
