@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Day 04B\Day04B.csproj" />
     <ProjectReference Include="..\Day01\Day01.csproj" />
     <ProjectReference Include="..\Day02\Day02.csproj" />
     <ProjectReference Include="..\Day04\Day04\Day04.csproj" />
