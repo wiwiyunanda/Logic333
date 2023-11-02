@@ -39,40 +39,6 @@
             }
             Console.WriteLine(Math.Max( requirements.Count, minLength- password.Length));
 
-            //int total = 0;
-            //int minPass = 6;
-            //bool checkedNumbers = false;
-            //bool checkedLower = false;
-            //bool checkedUpper = false;
-            //bool checkedSpecial = false;
-            //bool checkedminPass = false;
-
-            //if (input < minPass)
-            //{
-            //    checkedNumbers = true;
-            //}
-            //for (int i = 0; i < input.Length; i++)
-            //{
-            //    if (numbers.IndexOf[input[i]] == -1)
-            //    {
-            //        checkedNumbers = true;
-            //    }
-            //    if (lower_case.IndexOf[input[i]] == -1)
-            //    {
-            //        checkedLower = true;
-            //    }
-            //    if (upper_case.IndexOf(input[i]) == -1)
-            //    {
-            //        checkedUpper = true;
-            //    }
-            //    if (special.IndexOf(input, i) == -1)
-            //    {
-            //        checkedSpecial = true;
-            //    }
-            //    else
-            //        total++;
-            //}
-
         }
     }
 }

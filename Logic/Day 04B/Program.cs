@@ -20,7 +20,9 @@ namespace Day04B
             Console.WriteLine("2. Compare the Triplets");
             Console.WriteLine("3. camel Case");
             Console.WriteLine("4. Strong Password");
-           
+            Console.WriteLine("5. Caesar Cipher");
+            Console.WriteLine("6. Mars Eksploration");
+
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
             {
@@ -39,6 +41,12 @@ namespace Day04B
                         break;
                     case 4:
                         StrongPassword strongPassword = new StrongPassword();
+                        break;
+                    case 5:
+                        CaesarCipher caesarCipher = new CaesarCipher();
+                        break;
+                    case 6:
+                        MarsExploration marsExploration = new MarsExploration();
                         break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
