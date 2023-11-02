@@ -5,7 +5,7 @@
         public Staircase()
         {
             Console.WriteLine("=====Staircase====");
-            Console.WriteLine("Masukkan nilai Array:");
+            Console.WriteLine("Masukkan Jumlah deret yang diinginkan:");
 
             int arrCount = int.Parse(Console.ReadLine());
            

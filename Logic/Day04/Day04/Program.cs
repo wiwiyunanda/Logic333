@@ -23,6 +23,8 @@ namespace Day04
             Console.WriteLine("7. Plus Minus");
             Console.WriteLine("8. Staircase");
             Console.WriteLine("9. Min-Max Sum");
+            Console.WriteLine("10. Birthday Cake Candles");
+            Console.WriteLine("11. A Very Big Sum");
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
             {
@@ -56,6 +58,12 @@ namespace Day04
                         break;
                     case 9:
                         MiniMaxSum miniMaxSum = new MiniMaxSum();
+                        break;
+                    case 10:
+                        BirthdayCakeCandles birthdayCakeCandles = new BirthdayCakeCandles();
+                        break;
+                    case 11:
+                        AVeryBigSum aVeryBigSum = new AVeryBigSum();
                         break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
