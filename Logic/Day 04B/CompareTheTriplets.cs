@@ -12,7 +12,7 @@
             //1 1
 
             Console.WriteLine("=====Compare the Triplets====");
-            Console.WriteLine("Masukkan nilai masing-masing tes:");
+            Console.Write("Masukkan nilai masing-masing tes:");
             //nilai orang pertama
             string[] tokens_a0 = Console.ReadLine().Split(' ');
             int a0 = Convert.ToInt32(tokens_a0[0]);

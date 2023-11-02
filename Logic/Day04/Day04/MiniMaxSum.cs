@@ -5,7 +5,7 @@
         public MiniMaxSum()
         {
             Console.WriteLine("=====Min Max Sum====");
-            Console.WriteLine("Masukkan nilai Array:");
+            Console.Write("Masukkan nilai Array:");
             int[] deret = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
             Array.Sort(deret);

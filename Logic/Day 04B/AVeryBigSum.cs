@@ -19,7 +19,7 @@ namespace Day_04B
 
 
             Console.WriteLine("=====A Very Big Sum====");
-            Console.WriteLine("Masukkan jumlah deret nilai:");
+            Console.Write("Masukkan jumlah deret nilai:");
             int jumlah = int.Parse(Console.ReadLine());
             string[] deret = new string[jumlah];
             for (int i = 0; i < deret.Length; i++)

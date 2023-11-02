@@ -18,6 +18,7 @@ namespace Day04B
             Console.WriteLine("===Day 04 B===");
             Console.WriteLine("1. A Very Big Sum");
             Console.WriteLine("2. Compare the Triplets");
+            Console.WriteLine("3. camel Case");
             //Console.WriteLine("3. Substring");
             //Console.WriteLine("4. Time Conversion");
             //Console.WriteLine("5. Simple Array Sum");
@@ -40,36 +41,9 @@ namespace Day04B
                     case 2:
                         CompareTheTriplets compareTheTriplets = new CompareTheTriplets();
                         break;
-                    //case 2:
-                    //    Split split = new Split();
-                    //    break;
-                    //case 3:
-                    //    Substring substring = new Substring();
-                    //    break;
-                    //case 4:
-                    //    TimeConversion timeConversion = new TimeConversion();
-                    //    break;
-                    //case 5:
-                    //    SimpleArraySum simpleArraySum = new SimpleArraySum();
-                    //    break;
-                    //case 6:
-                    //    DiagonalDifference diagonalDifference = new DiagonalDifference();
-                    //    break;
-                    //case 7:
-                    //    PlusMinus plusMinus = new PlusMinus();
-                    //    break;
-                    //case 8:
-                    //    Staircase staircase = new Staircase();
-                    //    break;
-                    //case 9:
-                    //    MiniMaxSum miniMaxSum = new MiniMaxSum();
-                    //    break;
-                    //case 10:
-                    //    BirthdayCakeCandles birthdayCakeCandles = new BirthdayCakeCandles();
-                    //    break;
-                    //case 11:
-                    //    AVeryBigSum aVeryBigSum = new AVeryBigSum();
-                    //    break;
+                    case 3:
+                        camelCase camelCase = new camelCase();
+                        break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
                         break;

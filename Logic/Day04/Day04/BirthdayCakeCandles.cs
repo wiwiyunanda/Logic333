@@ -8,7 +8,7 @@ namespace Day04
         public BirthdayCakeCandles()
         {
             Console.WriteLine("=====Birthday Cake Candles====");
-            Console.WriteLine("Masukkan deret lilin:");
+            Console.Write("Masukkan deret lilin:");
 
             int[] arrCount = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
