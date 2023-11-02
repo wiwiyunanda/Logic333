@@ -23,6 +23,7 @@ namespace Day04B
             Console.WriteLine("5. Caesar Cipher");
             Console.WriteLine("6. Mars Eksploration");
             Console.WriteLine("7. Hackerrank in A String");
+            Console.WriteLine("8. Pangrams");
 
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
@@ -52,6 +53,9 @@ namespace Day04B
                     case 7:
                         HackerRankinAString hackerRankinAString = new HackerRankinAString();
                     break;
+                    case 8:
+                        pangrams pangrams = new pangrams();
+                        break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
                         break;
