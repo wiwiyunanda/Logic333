@@ -22,6 +22,7 @@ namespace Day04B
             Console.WriteLine("4. Strong Password");
             Console.WriteLine("5. Caesar Cipher");
             Console.WriteLine("6. Mars Eksploration");
+            Console.WriteLine("7. Hackerrank in A String");
 
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
@@ -48,6 +49,9 @@ namespace Day04B
                     case 6:
                         MarsExploration marsExploration = new MarsExploration();
                         break;
+                    case 7:
+                        HackerRankinAString hackerRankinAString = new HackerRankinAString();
+                    break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
                         break;
