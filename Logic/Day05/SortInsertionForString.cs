@@ -10,13 +10,13 @@ namespace Day05
         {
             Console.WriteLine("=====Sort Insertion For String=====");
             Console.WriteLine("Masukkan string: ");
-            string[] arrString = Console.ReadLine().Split(' ');
+            char[] arrChar = Console.ReadLine().ToCharArray();
 
-                arrString = Sorting.StringInsertion(arrString);
+                arrChar = Sorting.Insertion(arrChar);
 
-            for (int i = 0; i < arrString.Length; i++)
+            for (int i = 0; i < arrChar.Length; i++)
             {
-                Console.WriteLine(arrString[i]);
+                Console.WriteLine(arrChar[i]);
             }
 
         }

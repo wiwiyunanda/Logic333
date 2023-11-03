@@ -15,6 +15,7 @@
             Console.WriteLine("=====HackerRank in A String=====");
             Console.Write("Masukkan kata: ");
             string input = Console.ReadLine().ToLower();
+
             string key = "hackerrank";
             int cursor =0;
 

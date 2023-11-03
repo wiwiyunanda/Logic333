@@ -20,6 +20,7 @@ namespace Gateway
                 Console.WriteLine(" 3 Day 04");
                 Console.WriteLine(" 4 Day O4 B");
                 Console.WriteLine(" 5 Day 05");
+                Console.WriteLine("99 Pre Test");
                 Console.Write("Pilih hari: ");
 
                 int hari = int.Parse(Console.ReadLine());
@@ -40,6 +41,9 @@ namespace Gateway
                         break;
                     case 5:
                         Day05.Program program05 = new Day05.Program();
+                        break;
+                    case 99:
+                        Pretest.Program program99 = new Pretest.Program();
                         break;
                     default:
                         Console.WriteLine("Hari tidak ditemukan");

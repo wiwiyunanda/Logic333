@@ -30,21 +30,21 @@ namespace Utility
         }
 
 
-        public static string[] StringInsertion(string[] arr)
+        public static char[] Insertion(char[] arrChar)
         { 
-            for (int i=1; i < arr.Length;i++)
+            for (int i=1; i < arrChar.Length;i++)
             {
                 for(int j=i; j > 0; j--)
                 {
-                    if (arr[j].CompareTo(arr[j-1]) < 0)
+                    if (arrChar[j] < arrChar[j-1])
                     {
-                        string temp = arr[j - 1];
-                        arr[j-1] = arr[j];
-                        arr[j] = temp;
+                        var temp = arrChar[j - 1];
+                        arrChar[j-1] = arrChar[j];
+                        arrChar[j] = temp;
                     }
                 }
             }
-            return arr;
+            return arrChar;
         }
 
     }
