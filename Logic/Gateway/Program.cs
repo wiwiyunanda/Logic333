@@ -18,7 +18,8 @@ namespace Gateway
                 Console.WriteLine(" 1 Day 01");
                 Console.WriteLine(" 2 Day 02");
                 Console.WriteLine(" 3 Day 04");
-                Console.WriteLine(" 5 Day O4 B");
+                Console.WriteLine(" 4 Day O4 B");
+                Console.WriteLine(" 5 Day 05");
                 Console.Write("Pilih hari: ");
 
                 int hari = int.Parse(Console.ReadLine());
@@ -31,11 +32,14 @@ namespace Gateway
                     case 2:
                         Day02.Program program02 = new Day02.Program();
                         break;
-                    case 4:
+                    case 3:
                         Day04.Program program04 = new Day04.Program();
                         break;
-                    case 5:
+                    case 4:
                         Day04B.Program program04B = new Day04B.Program();
+                        break;
+                    case 5:
+                        Day05.Program program05 = new Day05.Program();
                         break;
                     default:
                         Console.WriteLine("Hari tidak ditemukan");

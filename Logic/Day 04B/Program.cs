@@ -1,4 +1,5 @@
 ﻿using System.Data.SqlTypes;
+using System.Reflection.Metadata.Ecma335;
 using Day_04B;
 
 namespace Day04B
@@ -24,6 +25,7 @@ namespace Day04B
             Console.WriteLine("6. Mars Eksploration");
             Console.WriteLine("7. Hackerrank in A String");
             Console.WriteLine("8. Pangrams");
+            Console.WriteLine("9. Gemstones");
 
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
@@ -55,6 +57,9 @@ namespace Day04B
                     break;
                     case 8:
                         pangrams pangrams = new pangrams();
+                        break;
+                    case 9:
+                        Gemstones gemstones = new Gemstones();
                         break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
