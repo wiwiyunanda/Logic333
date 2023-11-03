@@ -17,7 +17,9 @@ namespace Day05
             Console.WriteLine("1. List and Data Type");
             Console.WriteLine("2. List and Object");
             Console.WriteLine("3. List and List");
-            Console.WriteLine("");
+            Console.WriteLine("4. Making Anagrams");
+            Console.WriteLine("5. Sort Insertion");
+            Console.WriteLine("6. Sort Insertion For String");
 
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
@@ -35,6 +37,16 @@ namespace Day05
                     case 3:
                         ListandList listandList = new ListandList();
                         break;
+                    case 4:
+                        MakingAnagrams makingAnagrams = new MakingAnagrams();
+                        break;
+                    case 5:
+                        SortInsertion sortInsertion = new SortInsertion();
+                        break;
+                    case 6:
+                        SortInsertionForString sortInsertionForString = new SortInsertionForString();
+                        break;
+                        
                    
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
