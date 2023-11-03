@@ -10,7 +10,7 @@ namespace Pretest
 
             Console.Write("Masukkan kata: ");
             string input = Console.ReadLine().ToLower();
-            Console.Write("Masukkan kalimat");
+            Console.Write("Masukkan kalimat: ");
             string key = Console.ReadLine().ToLower();
             int cursor = 0;
 
