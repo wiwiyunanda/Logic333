@@ -17,6 +17,7 @@ namespace Pretest
             Console.WriteLine("1. Soal No 1.");
             Console.WriteLine("2. Soal No 2.");
             Console.WriteLine("3. Soal No 3.");
+            Console.WriteLine("5. Soal No 5.");
 
             string answer = "t"; //tidak keluar
             while (answer.ToLower() == "t")
@@ -33,6 +34,9 @@ namespace Pretest
                         break;
                     case 3:
                         new Soal3();
+                        break;
+                    case 5:
+                        new Soal5();
                         break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
