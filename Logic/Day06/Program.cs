@@ -23,6 +23,7 @@ namespace Day06
             Console.WriteLine("7. Minimum Loss");
             Console.WriteLine("8. Pairs");
             Console.WriteLine("9. Recursive Digit Sum");
+            Console.WriteLine("10. Date Time & Time Span");
 
 
             string answer = "t"; //tidak keluar
@@ -58,6 +59,9 @@ namespace Day06
                         break;
                     case 9:
                         new RecursiveDigitSum();
+                        break;
+                    case 10:
+                        new DateTimeReview();
                         break;
                     default:
                         Console.WriteLine("Nomor soal tidak ditemukan.");
