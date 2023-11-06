@@ -20,8 +20,8 @@ namespace Gateway
                 Console.WriteLine(" 3 Day 04");
                 Console.WriteLine(" 4 Day O4 B");
                 Console.WriteLine(" 5 Day 05");
+                Console.WriteLine(" 6 Day 06");
                 Console.WriteLine("99 Pre Test");
-                Console.WriteLine("6 Day 06");
                 Console.Write("Pilih hari: ");
 
                 int hari = int.Parse(Console.ReadLine());

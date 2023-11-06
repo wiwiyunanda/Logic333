@@ -2,18 +2,82 @@
 {
     public class Printing
     {
-        public static void Print2D(int[,] arr2d)
+        static public void Print2D(int[,] arr2D)
         {
-            for (int row = 0; row < arr2d.GetLength(0); row++)
+            for (int row = 0; row < arr2D.GetLength(0); row++)
             {
-                for (int coll = 0; coll < arr2d.GetLength(1); coll++)
+                for (int coll = 0; coll < arr2D.GetLength(1); coll++)
                 {
-                    //cetak kolom
-                    Console.Write($"{arr2d[row, coll]}\t");
+                    Console.Write($"{arr2D[row, coll]}\t");
                 }
-                //pindah baris
                 Console.WriteLine();
             }
         }
+        static public void Print1D(string[] arr)
+        {
+            foreach (string val in arr)
+            {
+                Console.Write(val + " ");
+            }
+            Console.WriteLine();
+        }
+
+        static public void Print1D(decimal[] arr)
+        {
+            foreach (decimal val in arr)
+            {
+                Console.Write(val + " ");
+            }
+            Console.WriteLine();
+        }
+        static public void Print1DChar(char[] arr)
+        {
+            foreach (char val in arr)
+            {
+                Console.Write(val);
+            }
+            Console.WriteLine();
+        }
+
+        static public void Print1D(int[] arr)
+        {
+            foreach (int val in arr)
+            {
+                Console.Write(val + " ");
+            }
+            Console.WriteLine();
+        }
+        static public void PrintList(List<int> list)
+        {
+            foreach (int row in list)
+            {
+                Console.Write(row + " ");
+            }
+            Console.WriteLine();
+        }
+
+        static public void PrintList(List<string> list)
+        {
+            foreach (string row in list)
+            {
+                Console.Write(row + " ");
+            }
+            Console.WriteLine();
+        }
+        static public void PrintList(List<List<int>> list)
+        {
+            Console.WriteLine("ListList");
+            foreach (List<int> row in list)
+            {
+                foreach (int i in row)
+                {
+                    Console.Write("{0} ", i);
+                }
+            }
+            Console.WriteLine();
+        }
     }
+
+
 }
+

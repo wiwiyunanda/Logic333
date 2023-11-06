@@ -7,7 +7,7 @@ namespace Day06
         public BigSorting()
         {
             Console.WriteLine("=====Big Sorting=====");
-            Console.WriteLine("Masukkan angka: ");
+            Console.Write("Masukkan angka: ");
             int n = Convert.ToInt32(Console.ReadLine().Trim());
 
             List<string> unsorted = new List<string>();
