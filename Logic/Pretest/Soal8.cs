@@ -15,8 +15,8 @@ namespace Pretest
         static int CalculateDifference(string input)
         {
             input = input.ToLower();
-            int vowelSum = 0;
-            int consonantSum = 0;
+            int vokalSum = 0;
+            int konsonanSum = 0;
 
             for (int i = 0; i < input.Length; i++)
             {
@@ -26,15 +26,15 @@ namespace Pretest
                 {
                     if ("aeiou".Contains(currentChar))
                     {
-                        vowelSum += (currentChar - 'a' + 1);
+                        vokalSum += (currentChar - 'a' + 1);
                     }
                     else
                     {
-                        consonantSum += (currentChar - 'a' + 1);
+                        konsonanSum += (currentChar - 'a' + 1);
                     }
                 }
             }
-            return Math.Abs(vowelSum - consonantSum);
+            return Math.Abs(vokalSum - konsonanSum);
         }
     }
 }
