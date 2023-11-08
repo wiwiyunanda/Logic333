@@ -89,6 +89,7 @@ SELECT Max(Kd_Pengarang) Kd_Pengarang_Terbesar, MIN(Kd_Pengarang) Kd_Pengarang_T
 --Soal 5a. Tampilkan gaji tertinggi dan terendah
 SELECT MAX(Gaji) Gaji_terbesar, MIN(Gaji) Gaji_terendah FROM tblGaji
 
+
 --5b. Tampilkan gaji diatas 600k
 SELECT Gaji FROM tblGaji
 WHERE Gaji > 600000
@@ -105,4 +106,39 @@ FROM tblGaji
 inner join tblPengarang on tblGaji.ID =tblPengarang.ID
 ORDER BY Kota
 
---5e. Tampilkan seluruh record pengarang antara P0001-P0006 dari tabel pengarang.SELECT Kd_Pengarang FROM tblPengarangWHERE Kd_Pengarang BETWEEN 'P0001' and 'P0006'--5f. Tampilkan seluruh data yogya, solo, dan magelang dari tabel pengarang.SELECT * FROM tblPengarangWHERE Kota IN ('yogya', 'solo', 'magelang')ORDER BY Kota--5G. Tampilkan seluruh data yang bukan yogya dari tabel pengarang.SELECT * FROM tblPengarangWHERE kota != 'Yogya'ORDER BY Kota
+--5e. Tampilkan seluruh record pengarang antara P0001-P0006 dari tabel pengarang.
+SELECT Kd_Pengarang FROM tblPengarang
+WHERE Kd_Pengarang BETWEEN 'P0001' and 'P0006'
+
+--5f. Tampilkan seluruh data yogya, solo, dan magelang dari tabel pengarang.
+SELECT * FROM tblPengarang
+WHERE Kota IN ('yogya', 'solo', 'magelang')
+ORDER BY Kota
+
+--5G. Tampilkan seluruh data yang bukan yogya dari tabel pengarang.
+SELECT * FROM tblPengarang
+WHERE kota != 'Yogya'
+ORDER BY Kota
+
+--5H a. Tampilkan seluruh data pengarang yang nama (dapat digabungkan atau terpisah): dimulai dengan huruf [A] 
+SELECT * FROM tblPengarang
+WHERE Nama like 'a%'
+
+--5H b. Tampilkan seluruh data pengarang yang nama (dapat digabungkan atau terpisah): berakhiran [i]
+SELECT * FROM tblPengarang
+WHERE Nama like '%i'
+
+--5H c. Tampilkan seluruh data pengarang yang nama (dapat digabungkan atau terpisah): huruf ketiganya [A]
+SELECT * FROM tblPengarang
+WHERE Nama like '__a%'
+
+--5H d. Tampilkan seluruh data pengarang yang nama (dapat digabungkan atau terpisah): tidak berakhiran [n]
+SELECT * FROM tblPengarang
+WHERE Nama not like '%n'
+
+--5i. Tampilkan seluruh data table tblPengarang dan tblGaji dengan Kd_Pengarang yang sama
+SELECT peng.* , gj.Gaji
+FROM tblPengarang peng
+JOIN tblGaji gj on peng.Kd_Pengarang = gj.Kd_Pengarang
+
+--5j. Tampilan kota yang memiliki gaji dibawah 1.000.000SELECT peng.Kota, gj.GajiFROM tblPengarang pengJOIN tblGaji gj on peng.Kd_Pengarang = gj.Kd_PengarangWHERE gj.Gaji < 1000000ORDER BY gj.Gaji--5k. Ubah panjang dari tipe kelamin menjadi 10ALTER TABLE tblPengarang ALTER COLUMN Kelamin Varchar(10)--5L. Tambahkan kolom [Gelar] dengan tipe Varchar (12) pada tabel tblPengarangALTER TABLE tblPengarang ADD Gelar Varchar (12)--CHALLANGE--5M. Ubah alamat dan kota dari Rian di table tblPengarang menjadi, Jl. Cendrawasih 65 dan PekanbaruUPDATE tblPengarang SET Alamat = 'Jl. Cendrawasih 65', Kota = 'Pekanbaru' WHERE Nama = 'Rian'SELECT * FROM tblPengarang
