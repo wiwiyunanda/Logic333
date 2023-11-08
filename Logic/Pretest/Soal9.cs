@@ -6,8 +6,8 @@ namespace Pretest
         public Soal9()
         {
             Console.WriteLine("=====Soal 9=====");
-            Console.Write("Masukkan jumlah deret angka: ");
-            string deret = Console.ReadLine();
+            Console.Write("Masukkan deret angka: ");
+            int[] deret = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
 
             int naik = 0;
             int turun = 0;
