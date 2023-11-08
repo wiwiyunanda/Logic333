@@ -9,7 +9,7 @@ namespace Pretest
             Console.Write("Masukkan kata: ");
             string input = Console.ReadLine().ToLower();
             int result = CalculateDifference(input);
-            Console.WriteLine("Output: " + result);
+            Console.Write("Selisih Vokal dan Konsonan: " + result);
         }
 
         static int CalculateDifference(string input)

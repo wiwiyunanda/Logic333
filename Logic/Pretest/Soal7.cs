@@ -6,7 +6,7 @@ namespace Pretest
         public Soal7()
         {
             Console.WriteLine("=====Soal 7=====");
-            
+        } 
     }
     
 }
