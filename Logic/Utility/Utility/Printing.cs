@@ -13,6 +13,22 @@
                 Console.WriteLine();
             }
         }
+
+        static public void Print2D(string[,] arr2D)
+        {
+            for (int row = 0; row < arr2D.GetLength(0); row++)
+            {
+                for (int coll = 0; coll < arr2D.GetLength(1); coll++)
+                {
+                    if (string.IsNullOrEmpty (arr2D[row, coll]))
+                        Console.Write("*\t");
+                    else
+                        Console.Write($"{arr2D[row, coll]}\t");
+                }
+                Console.WriteLine();
+            }
+        }
+
         static public void Print1D(string[] arr)
         {
             foreach (string val in arr)

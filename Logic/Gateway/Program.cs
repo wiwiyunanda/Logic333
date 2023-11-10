@@ -21,6 +21,7 @@ namespace Gateway
                 Console.WriteLine(" 4 Day O4 B");
                 Console.WriteLine(" 5 Day 05");
                 Console.WriteLine(" 6 Day 06");
+                Console.WriteLine("10 Day 10");
                 Console.WriteLine("99 Pre Test");
                 Console.Write("Pilih hari: ");
 
@@ -45,6 +46,9 @@ namespace Gateway
                         break;
                     case 6:
                         Day06.Program program06 = new Day06.Program();
+                        break;
+                    case 10:
+                        Day10.Program program10 = new Day10.Program();
                         break;
                     case 99:
                         Pretest.Program program99 = new Pretest.Program();
